@@ -5,19 +5,19 @@ data=dict(
   sample_per_gpu=8,
   train=dict(
     dataset=dict(
-      ann_file='/content/gdrive/MyDrive/mmdetection/dataset/fruitdata/annotations/train.json',
-      img_prefix='/content/gdrive/MyDrive/mmdetection/dataset/fruitdata/train',
+      ann_file='/content/gdrive/MyDrive/dataset/fruitdata/annotations/train.json',
+      img_prefix='/content/gdrive/MyDrive/dataset/fruitdata/train',
       classes=("lemon",)
     )
   ),
   val=dict(
-    ann_file='/content/gdrive/MyDrive/mmdetection/dataset/fruitdata/annotations/train.json',
-    img_prefix='/content/gdrive/MyDrive/mmdetection/dataset/fruitdata/train',
+    ann_file='/content/gdrive/MyDrive/dataset/fruitdata/annotations/train.json',
+    img_prefix='/content/gdrive/MyDrive/dataset/fruitdata/train',
     classes=("lemon",)
   ),
   test=dict(
-    ann_file='/content/gdrive/MyDrive/mmdetection/dataset/fruitdata/annotations/train.json',
-    img_prefix='/content/gdrive/MyDrive/mmdetection/dataset/fruitdata/train',
+    ann_file='/content/gdrive/MyDrive/dataset/fruitdata/annotations/train.json',
+    img_prefix='/content/gdrive/MyDrive/dataset/fruitdata/train',
     classes=("lemon",)
   )
 )
@@ -31,7 +31,7 @@ model=dict(
 #decrease loss(from 580)
 #使用预训练的检测模型作为梯度下降起点，微调训练
 #yolov 300e:原来训练了300轮
-load_from="/content/gdrive/MyDrive/mmdetection/dataset/yolov3_mobilenetv2_mstrain-416_300e_coco_20210718_010823-f68a07b3.pth"
+load_from="/content/gdrive/MyDrive/mmdetection/dataset/project2/yolov3_mobilenetv2_mstrain-416_300e_coco_20210718_010823-f68a07b3.pth"
 # epoch
 runner = dict(type='EpochBasedRunner', max_epochs=8) ##30-->8 YYH
 ##max_epochs 30x10 =300e
